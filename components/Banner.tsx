@@ -51,7 +51,7 @@ const Banner = ({ netflixOriginals }: Props) => {
         <button
           className="bannerButton bg-[gray]/70"
           onClick={() => {
-            // setCurrentMovie(movie);
+            setCurrentMovie(movie);
             setShowModal(true);
           }}
         >

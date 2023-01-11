@@ -31,8 +31,6 @@ const Home = ({
 }: Props) => {
   const showModal = useRecoilValue(modalState);
 
-  console.log(showModal);
-
   return (
     <>
       <Head>
@@ -41,7 +39,11 @@ const Home = ({
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="relative h-screen bg-gradient-to-b from-gray-900/10 to-[#010511] lg:h-[140vh]">
+      <div
+        className={`relative h-screen bg-gradient-to-b from-gray-900/10 to-[#010511] lg:h-[140vh] ${
+          showModal && "!h-screen overflow-hidden"
+        }`}
+      >
         <Header />
 
         <main className="relative pl-4 pb-24 lg:space-y-24 lg:pl-16 ">
@@ -57,8 +59,8 @@ const Home = ({
             <Row title="Documentaries" movies={documentaries} />
           </section>
         </main>
-        
-        <Modal />
+
+        {showModal && <Modal />}
       </div>
     </>
   );
