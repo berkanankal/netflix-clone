@@ -4,6 +4,9 @@ import requests from "../utils/requests";
 import { Movie } from "../typings";
 import Banner from "../components/Banner";
 import Row from "../components/Row";
+import { useRecoilValue } from "recoil";
+import { modalState } from "../atoms/modalAtom";
+import Modal from "../components/Modal";
 
 interface Props {
   netflixOriginals: Movie[];
@@ -26,6 +29,10 @@ const Home = ({
   romanceMovies,
   documentaries,
 }: Props) => {
+  const showModal = useRecoilValue(modalState);
+
+  console.log(showModal);
+
   return (
     <>
       <Head>
@@ -50,6 +57,8 @@ const Home = ({
             <Row title="Documentaries" movies={documentaries} />
           </section>
         </main>
+        
+        <Modal />
       </div>
     </>
   );
