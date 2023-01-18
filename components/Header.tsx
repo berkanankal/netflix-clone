@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { BellAlertIcon, MagnifyingGlassIcon } from "@heroicons/react/24/solid";
+import Menu from "./Menu";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -32,6 +33,8 @@ const Header = () => {
           className="cursor-pointer object-contain"
           alt="Netflix Logo"
         />
+
+        <Menu />
 
         <ul className="hidden md:flex space-x-4">
           <li className="headerLink">Home</li>
