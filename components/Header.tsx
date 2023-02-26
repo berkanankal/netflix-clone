@@ -27,7 +27,7 @@ const Header = () => {
     <header className={`${isScrolled && "bg-[#141414]"}`}>
       <div className="flex items-center space-x-2 md:space-x-10">
         <Image
-          src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg"
+          src="/assets/images/netflix-logo.png"
           width={100}
           height={100}
           className="cursor-pointer object-contain"
@@ -49,10 +49,10 @@ const Header = () => {
         <MagnifyingGlassIcon className="hidden sm:inline h-6 w-6 " />
         <p className="hidden lg:inline">Kids</p>
         <BellAlertIcon className="h-6 w-6" />
-        <Link href="/account">
+        <Link href="/plans">
           <Image
             src="/assets/images/netflix-avatar.png"
-            alt="Account"
+            alt="Plans"
             className="cursor-pointer rounded"
             width={30}
             height={30}

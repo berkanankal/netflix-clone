@@ -41,7 +41,7 @@ const Auth = () => {
         alt="Netflix Background"
       />
       <Image
-        src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg"
+        src="/assets/images/netflix-logo.png"
         width={100}
         height={100}
         className="absolute left-4 top-4 cursor-pointer object-contain md:left-10 md:top-6"

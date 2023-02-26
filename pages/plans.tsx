@@ -21,7 +21,7 @@ const Plans = () => {
       <header className="border-b border-white/10 bg-[#141414]">
         <Link href="/">
           <Image
-            src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg"
+            src="/assets/images/netflix-logo.png"
             width={100}
             height={100}
             className="cursor-pointer object-contain"
