@@ -82,7 +82,19 @@ npm run dev
 
 ## Screenshots
 
-Will be added soon.
+![1](https://user-images.githubusercontent.com/67144252/221413292-8529f5d1-b067-4051-90ac-7db8deec1664.png)
+<br>
+<br>
+![2](https://user-images.githubusercontent.com/67144252/221413157-c4645b16-87a8-4d04-b62b-9d26b34e482a.png)
+<br>
+<br>
+![3](https://user-images.githubusercontent.com/67144252/221413253-9d6890d4-67d7-40d8-bee8-e676f4daa06d.png)
+
+
+
+
+
+
 
 
 
